@@ -7,7 +7,7 @@ SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 if [ ! "$BRANCH" = "master" ]; then
-	printf >&2 "\033[1;31mNot on master branch, abording\033[0m"
+	printf >&2 "\033[1;31mNot on master branch, aborting\033[0m"
 	exit 255
 fi
 
